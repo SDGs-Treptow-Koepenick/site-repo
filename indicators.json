@@ -551,7 +551,7 @@
         },
         {
           "id": "12-2-2",
-          "title": "Anzahl der Kirchengemeinden mit dem Siegel 'Faire Gemeinde' im Bezirk",
+          "title": "Anzahl der Kirchengemeinden mit dem ökumenischen Siegel 'Faire Gemeinde' im Bezirk",
           "description": "",
           "keywords": "",
           "href": "/SDGTK/12-2-2",
@@ -827,6 +827,14 @@
           "description": "",
           "keywords": "",
           "href": "/SDGTK/17-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-6-2",
+          "title": "Internationale Förderungen aus den Agenda Fonds Treptow-Köpenick",
+          "description": "",
+          "keywords": "",
+          "href": "/SDGTK/17-6-2",
           "status": "notstarted"
         }]
     }

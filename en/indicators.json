@@ -551,7 +551,7 @@
         },
         {
           "id": "12-2-2",
-          "title": "Number of parishes with 'Fair Parish' certification in the district",
+          "title": "Number of parishes with ecumenical 'Fair Parish' certification in the district",
           "description": "",
           "keywords": "",
           "href": "/SDGTK/en/12-2-2",
@@ -827,6 +827,14 @@
           "description": "",
           "keywords": "",
           "href": "/SDGTK/en/17-6-1",
+          "status": "notstarted"
+        },
+        {
+          "id": "17-6-2",
+          "title": "International Fonding from the Agenda Fonds Treptow-Köpenick",
+          "description": "",
+          "keywords": "",
+          "href": "/SDGTK/en/17-6-2",
           "status": "notstarted"
         }]
     }
