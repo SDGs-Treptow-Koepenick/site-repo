@@ -15,12 +15,16 @@
 #
 # ****************************************************************************
 
-name: Deploy to production
+name: Deploy to Production
 
 on:
   push:
     branches:
       - master
+  schedule:
+    - cron: '10 0 * * *'
+  repository_dispatch:
+    types: rebuild-staging
 
 jobs:
   build:
@@ -36,12 +40,12 @@ jobs:
           ruby-version: 2.6.10
           bundler-cache: true
 
-      - name: Install and build site with Jekyll
+      - name: Build the site
         run: |
           gem install bundler -v 2.4.22
           bundle config path vendor/bundle
           bundle install
-          bundle exec jekyll build --config _config.yml,_config_prod.yml
+          bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
