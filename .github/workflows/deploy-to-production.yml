@@ -48,10 +48,10 @@ jobs:
         bundle install
         bundle exec jekyll build --config _config.yml,_config_prod.yml
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@v4.4.3
       with:
-        REPOSITORY_NAME: sdgtk/sdgtk.github.io
-        ACCESS_TOKEN: ${{ secrets.token }}
-        BRANCH: master
-        FOLDER: _site
-        CLEAN: true
+        repository-name: sdgtk/sdgtk.github.io
+        token: ${{ github.event_name == 'schedule' && secrets.GITHUB_TOKEN || secrets.token }}
+        branch: master
+        folder: _site
+        clean: true
