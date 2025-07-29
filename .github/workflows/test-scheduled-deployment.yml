@@ -1,0 +1,35 @@
+name: Test Scheduled Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-22.04
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Ruby 2.6
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6.10
+    - name: Build the site
+      run: |
+        gem install bundler -v 2.4.22
+        bundle config path vendor/bundle
+        bundle install
+        bundle exec jekyll build --config _config.yml,_config_prod.yml
+    - name: Deploy to GitHub Pages (Simulating Schedule)
+      uses: JamesIves/github-pages-deploy-action@v4.4.3
+      with:
+        repository-name: sdgtk/sdgtk.github.io
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
+        folder: _site
+        clean: true
