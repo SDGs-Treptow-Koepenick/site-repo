@@ -22,7 +22,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: '10 0 * * *'
+    - cron: '*/5 * * * *'  # Every 5 minutes for testing - CHANGE BACK AFTER TESTING!
   workflow_dispatch:
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.4.3
       with:
         repository-name: sdgtk/sdgtk.github.io
-        token: ${{ github.event_name == 'schedule' && secrets.GITHUB_TOKEN || secrets.token }}
+        token: ${{ secrets.TOKEN }}
         branch: master
         folder: _site
         clean: true
