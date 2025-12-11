@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>News &amp; Events - Indicators For The Sustainable Development Goals</title>
+    <title>News &amp; Events - general.site_title</title>
 
 
 
@@ -131,7 +131,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/SDGTK/assets/css/style.css?v=20251210022052">
+        <link rel="stylesheet" href="/SDGTK/assets/css/style.css?v=20251211022218">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -151,9 +151,9 @@ layout-news
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = null;</script>
 
-  <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+  <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0"></a>
   
 
 <div style="position: sticky; position: -webkit-sticky; top: 15px; z-index:3; background: white;">
@@ -178,7 +178,7 @@ layout-news
 
                   <div id="SDGlogo">
                         <a class="navbar-brand" href="/SDGTK/en/" id="home">
-    <img src="/SDGTK/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/SDGTK/assets/img/SDG_logo.png" alt="general.sdg - header.tag_line" />
 </a>
                   </div>
                   
@@ -203,9 +203,9 @@ layout-news
         <div class="search-and-desktop-widgets" style="display: inline-flex; ">
           <div id="search" class="menu-target">
   <form action="/SDGTK/en/search/">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search"></label>
+    <input type="text" name="q" id="indicator_search" title="" /><!--
+    --><button aria-label="" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -221,11 +221,11 @@ layout-news
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name"></span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-de">
             <a href="/SDGTK/news/">
-              Deutsch
+              
             </a>
           </li></ul>
   </div>
@@ -240,17 +240,17 @@ layout-news
         <div class="navbar navbar-default menu-without-widgets" id="main-nav">
           <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label=""
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false"></button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/SDGTK/en/goals">Goals</a>
+    <a href="/SDGTK/en/goals">general.goals</a>
 </li><li class="nav-link ">
-    <a href="/SDGTK/en/reporting-status">Reporting Status</a>
+    <a href="/SDGTK/en/reporting-status">menu.reporting_status</a>
 </li><li class="nav-link ">
-    <a href="/SDGTK/en/about">About</a>
+    <a href="/SDGTK/en/about">menu.about</a>
 </li><li class="nav-link ">
-    <a href="/SDGTK/en/faq">FAQ</a>
+    <a href="/SDGTK/en/faq">menu.faq</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -262,11 +262,11 @@ layout-news
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name"></span>
       <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-de">
             <a href="/SDGTK/news/">
-              Deutsch
+              
             </a>
           </li></ul>
   </div>
@@ -279,8 +279,8 @@ layout-news
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title=""
+           aria-label=""
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -291,8 +291,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title=""
+           aria-label=""
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -309,14 +309,14 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label=""
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false"></button>
         <div id="search-mobile" class="menu-target">
   <form action="/SDGTK/en/search/">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile"></label>
+    <input type="text" name="q" id="indicator_search-mobile" title="" /><!--
+    --><button aria-label="" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -324,13 +324,13 @@ data-event-label="high"
 </ul>
 
           <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/SDGTK/en/goals">Goals</a>
+    <a href="/SDGTK/en/goals">general.goals</a>
 </li><li class="nav-link ">
-    <a href="/SDGTK/en/reporting-status">Reporting Status</a>
+    <a href="/SDGTK/en/reporting-status">menu.reporting_status</a>
 </li><li class="nav-link ">
-    <a href="/SDGTK/en/about">About</a>
+    <a href="/SDGTK/en/about">menu.about</a>
 </li><li class="nav-link ">
-    <a href="/SDGTK/en/faq">FAQ</a>
+    <a href="/SDGTK/en/faq">menu.faq</a>
 </li>
 
 </ul>
@@ -366,7 +366,7 @@ data-event-label="high"
     </div>
     
     <ul class="post-categories small-text"><li>
-                <a href="/SDGTK/en/categories/#Update" title="View all posts in the Update category">Update</a></li></ul>
+                <a href="/SDGTK/en/categories/#Update" title="">Update</a></li></ul>
     
 </article>
 
@@ -384,7 +384,7 @@ data-event-label="high"
     </div>
     
     <ul class="post-categories small-text"><li>
-                <a href="/SDGTK/en/categories/#Events" title="View all posts in the Events category">Events</a></li></ul>
+                <a href="/SDGTK/en/categories/#Events" title="">Events</a></li></ul>
     
 </article>
 
@@ -393,17 +393,17 @@ data-event-label="high"
     
     <div class="col-md-3 pull-md-9">
       <aside id="sidebar">
-  <h4>Posts by Category</h4>
+  <h4></h4>
   <ul>
     
       
       <li>
-        <a href="/SDGTK/en/categories/#Events" title="View all posts in the Events category">Events</a>
+        <a href="/SDGTK/en/categories/#Events" title="">Events</a>
       </li>
     
       
       <li>
-        <a href="/SDGTK/en/categories/#Update" title="View all posts in the Update category">Update</a>
+        <a href="/SDGTK/en/categories/#Update" title="">Update</a>
       </li>
     
   </ul>
@@ -537,15 +537,15 @@ data-event-label="high"
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="mailto:nachhaltigkeit@ba-tk.berlin.de" target="_blank" style="text-decoration: none;color:white;margin: 10px;font-size: 15px;">Contact us</a>
+                                        <a href="mailto:nachhaltigkeit@ba-tk.berlin.de" target="_blank" style="text-decoration: none;color:white;margin: 10px;font-size: 15px;">menu.contact_us</a>
                                     
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/SDGTK/en/about/cookies-and-privacy/" style="text-decoration: none;color:white;margin: 10px;font-size: 15px;">Legal Notice</a>
+                                    <a href="/SDGTK/en/about/cookies-and-privacy/" style="text-decoration: none;color:white;margin: 10px;font-size: 15px;">menu.cookies</a>
                                     
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/SDGTK/en/guidance" style="text-decoration: none;color:white;margin: 10px;font-size: 15px;">Technical References</a>
+                                    <a href="/SDGTK/en/guidance" style="text-decoration: none;color:white;margin: 10px;font-size: 15px;">menu.guidance</a>
                                     
                                     </li>
                             
@@ -592,17 +592,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = '';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = '';</script>
 
-<script src='/SDGTK/assets/js/sdg.js?v=20251210022052'></script>
+<script src='/SDGTK/assets/js/sdg.js?v=20251211022218'></script>
 
 
     
     
-    <script src="/SDGTK/assets/js/custom.js?v=20251210022052"></script><script>
+    <script src="/SDGTK/assets/js/custom.js?v=20251211022218"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
