@@ -21,8 +21,9 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '*/5 * * * *'
+  # TODO: PAT for pushing to sdgtk/sdgtk.github.io no longer valid — re-enable after token renewal
+  # schedule:
+  #   - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
