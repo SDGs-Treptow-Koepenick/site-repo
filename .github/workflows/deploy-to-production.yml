@@ -21,8 +21,8 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '10 0 * * *'  # Daily at 00:10 UTC
+  ## schedule:
+  ##  - cron: '10 0 * * *'  # Daily at 00:10 UTC
   workflow_dispatch:
 
 jobs:
